@@ -4,6 +4,11 @@
 
 Our solution for this Kaggle competition was a weighted ensemble of efficient nets, WaveNet, and CatBoost.
 
+Models at :- 
+[Efficient_b0](https://www.kaggle.com/datasets/garganany/two-step-b0-hms) [Efficientnet_b1](https://www.kaggle.com/datasets/garganany/version-10-b1-two-step-hms/data) 
+[Efficient_b2](https://www.kaggle.com/datasets/garganany/version-10-b2-two-step-hms) [Efficient_b3](https://www.kaggle.com/datasets/garganany/version-10-b3-two-step-hms) 
+[Catboost](https://www.kaggle.com/datasets/garganany/catboost-two-step/data) [WaveNet](https://www.kaggle.com/datasets/garganany/2-step-wave-net/data)
+
 ## Approach Overview:
 
 ### EEG Signal Conversion and Spectrogram Processing:
@@ -39,3 +44,6 @@ Weights for the weighted average was calculated via training 1 layer CNN
 | Efficient b0 | 0.31 | 0.38 |
 | Wavenet| 0.37 | 0.48 |
 | Catboost| 0.51 | 0.60 |
+
+
+We also tried working on images of eeg signals(and not merely spectograms) using VIT , but due to lack of time constraint and GPU , it was withhold but that approach is common in many top solutions 
